@@ -1,2 +1,2 @@
 # OpenAssoSport
-Create an app to managing a swimming club
+Create an app to manage a swimming club
