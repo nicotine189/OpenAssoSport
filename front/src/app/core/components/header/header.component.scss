@@ -1,0 +1,59 @@
+/* header.component.css */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo-img {
+    width: 5vw;
+    /* 5% of the viewport width */
+    height: auto;
+    vertical-align: middle;
+}
+
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-container input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.user-profile .user-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
