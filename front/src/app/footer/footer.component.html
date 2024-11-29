@@ -1,49 +1,49 @@
 <footer class="footer">
   <!-- Bloc 1 : Nom de l'association -->
   <div class="footer-header">
-    <h2>OpenAssoSport</h2>
+    <h2 id="footer-association-name">OpenAssoSport</h2>
     <p>Association Sportive de Natation</p>
     <hr class="footer-divider" />
   </div>
 
   <!-- Bloc 2 : Liens internes -->
   <div class="footer-links">
-    <nav aria-label="Liens principaux">
+    <nav aria-labelledby="footer-main-links">
+      <h3 id="footer-main-links" class="sr-only">Liens principaux</h3>
       <ul>
-        <li><a routerLink="/inscriptions" aria-label="Inscriptions 2025-2026">Inscriptions 2025 - 2026</a></li>
-        <li><a routerLink="/about" aria-label="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
-        <li><a routerLink="/contact" aria-label="Nous contacter">Nous contacter</a></li>
-        <li><a routerLink="/faq" aria-label="Aide / FAQ">Aide / FAQ</a></li>
+        <li><a routerLink="/inscriptions">Inscriptions 2025 - 2026</a></li>
+        <li><a routerLink="/about">Qui sommes-nous ?</a></li>
+        <li><a routerLink="/contact">Nous contacter</a></li>
+        <li><a routerLink="/faq">Aide / FAQ</a></li>
       </ul>
     </nav>
     <hr class="footer-divider" />
   </div>
 
-  <!-- Bloc 3 : Réseaux sociaux et bas de page -->
-  <div class="footer-bottom">
-    <!-- Liens réseaux sociaux -->
-    <div class="social-links">
-      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <mat-icon fontSet="fontawesome" fontIcon="fa-facebook-f"></mat-icon>
-      </a>
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-        <mat-icon fontSet="fontawesome" fontIcon="fa-twitter"></mat-icon>
-      </a>
-      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-        <mat-icon fontSet="fontawesome" fontIcon="fa-youtube"></mat-icon>
-      </a>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <mat-icon fontSet="fontawesome" fontIcon="fa-instagram"></mat-icon>
-      </a>
-    </div>
-
-    <!-- Liens Plan du site, Mentions légales, Cookies -->
-    <nav aria-label="Liens bas de page">
-      <ul>
-        <li><a routerLink="/plan-site" aria-label="Plan du site">Plan du site</a></li>
-        <li><a routerLink="/mentions-legales" aria-label="Mentions légales">Mentions légales</a></li>
-        <li><a routerLink="/cookies" aria-label="Cookies">Cookies</a></li>
-      </ul>
-    </nav>
+  <!-- Bloc des réseaux sociaux -->
+  <div class="social-links">
+    <h3 class="sr-only">Réseaux sociaux</h3>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Accéder à Facebook">
+      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Accéder à Twitter">
+      <i class="fab fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Accéder à YouTube">
+      <i class="fab fa-youtube" aria-hidden="true"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Accéder à Instagram">
+      <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
   </div>
+
+  <!-- Liens Plan du site, Mentions légales, Cookies -->
+  <nav aria-labelledby="footer-bottom-links">
+    <h3 id="footer-bottom-links" class="sr-only">Liens bas de page</h3>
+    <ul>
+      <li><a routerLink="/plan-site">Plan du site</a></li>
+      <li><a routerLink="/mentions-legales">Mentions légales</a></li>
+      <li><a routerLink="/cookies">Cookies</a></li>
+    </ul>
+  </nav>
 </footer>
