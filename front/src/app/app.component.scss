@@ -1,43 +1,60 @@
-    body {
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
+@import '../styles';
 
-  header {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-  }
 
-  main {
-      padding: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 60vh;
-  }
+.app-container {
+  background-color: $background-color;
+  color: $text-color;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 100vh;
+}
 
-  footer {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-  }
+.app-header {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 1rem;
+  text-align: center;
+}
 
-  h1 {
-      font-size: 2rem;
-      margin: 0;
-  }
+.app-main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
 
-  p {
-      font-size: 1rem;
-      color: #666;
-  }
+.app-footer {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 1rem;
+  text-align: center;
+}
 
-  .content {
-      max-width: 800px;
-      text-align: center;
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  color: $secondary-color;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.app-button {
+  background-color: $accent-color;
+  color: $primary-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten($accent-color, 10%);
   }
+}
